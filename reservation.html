@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header id="en-tete">
+       
+            <div class="en-tete-texte">
+                <h3>ITIC Paris</h3>
+                <p>Location de l'amphithéâtre</p>
+            </div>
+            <a href="" class="bouton-reserver">Réserver l'amphithéâtre</a>
+        </div>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="amphitheatre.html">L'amphithéâtre</a></li>
+            <li><a href="equipement.html">Equipements</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="tarif.html">Tarifs</a></li>
+            <li><a href="reservation.html"aria-current="page">Réservation</a></li>
+            <li><a href="acces.html">Accès</a></li>
+            <li><a href="question.html">Questions Fréquentes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    </section>
+ <section id="section-header">
+        <div class="div-section-header">
+            
+            <h1>Demande de réservation</h1>
+            <p>Décrivez votre événement. Devis sous 48 h ouvrées.</p>
+            
+        </div>
+    </section>
+    <section id="bandeau-reservation">
+        <h6>Cette demande ne vous engage pas. La réservation n'est confirmée qu'après signature du devis.</h6>
+    </section>
+    <section id="formulaire-reservation">
+    <h2>Vos coordonnées</h2>
+
+    <div class="grid">
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom">
+      </div>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom">
+      </div>
+    </div>
+
+    <label for="organisation">Organisation (entreprise, association, école)</label>
+    <input type="text" id="organisation">
+
+    <div class="grid">
+      <div>
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email">
+      </div>
+      <div>
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel">
+      </div>
+    </div>
+  </section>
+
+  <!-- D : Votre événement -->
+  <section id="formulaire-reservation">
+    <h2>Votre événement</h2>
+
+    <label for="nom-event">Nom de l'événement</label>
+    <input type="text" id="nom-event">
+
+    <label for="type">Type d'événement</label>
+    <select id="type">
+      <option></option>
+      <option>Conférence</option>
+      <option>Séminaire</option>
+      <option>Atelier</option>
+    </select>
+
+    <div class="grid">
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+      <div>
+        <label for="participants">Nombre de participants</label>
+        <input type="number" id="participants">
+      </div>
+      <div>
+        <label for="debut">Heure de début</label>
+        <input type="time" id="debut">
+      </div>
+      <div>
+        <label for="fin">Heure de fin</label>
+        <input type="time" id="fin">
+      </div>
+    </div>
+
+    <p class="sous-titre">Formule souhaitée</p>
+    <div class="grid">
+      <label class="option"><input type="radio" name="formule"> Demi-journée</label>
+      <label class="option"><input type="radio" name="formule"> Journée</label>
+      <label class="option"><input type="radio" name="formule"> Soirée</label>
+      <label class="option"><input type="radio" name="formule"> Autre</label>
+    </div>
+
+    <label for="disposition">Disposition de la salle</label>
+    <select id="disposition">
+      <option></option>
+      <option>Théâtre</option>
+      <option>Classe</option>
+      <option>En U</option>
+    </select>
+  </section>
+
+
+  <section id="formulaire-reservation">
+    <h2>Matériel et services</h2>
+
+    <div class="grid">
+      <label class="option"><input type="checkbox"> Micros sans fil</label>
+      <label class="option"><input type="checkbox"> Écrans / partage d'écran</label>
+      <label class="option"><input type="checkbox"> Caméra</label>
+      <label class="option"><input type="checkbox"> Wi-Fi invités</label>
+      <label class="option"><input type="checkbox"> Technicien AV</label>
+      <label class="option"><input type="checkbox"> Hôte / hôtesse</label>
+      <label class="option"><input type="checkbox"> Installation la veille</label>
+      <label class="option"><input type="checkbox"> Restauration</label>
+    </div>
+  </section>
+
+
+  <section id="formulaire-reservation">
+
+    <h2>Précisions</h2>
+
+    <label for="message">Message (facultatif)</label>
+    <textarea id="message" rows="4"></textarea>
+
+    <label class="option"><input type="checkbox"> Je souhaite visiter la salle avant de réserver</label>
+    <label class="option"><input type="checkbox" required> J'accepte que ITIC Paris utilise ces informations… (obligatoire)</label>
+  </section>
+
+
+  <section id="formulaire-reservation">
+    <button type="submit">Envoyer ma demande</button>
+  </section>
+
+</form>
+    <footer>
+        <h2>Itic Paris</h2>
+        <div>
+            <h2>Pages</h2>
+            <a href="amphiteatre.html">L'amphithéâtre</a>
+            <a href="equipement.html">Équipements <br></a>
+            <a href="tarif.html">Tarifs</a>
+            <a href="reservation.html">Réservation</a>
+            <a href="mention-legale.html">Mention légales</a>
+        </div>
+        <div>
+            <h2>Nous joindre</h2>
+            <p>location@itic-paris.fr</p>
+            <p>01 00 00 00 00</p>
+            <p>Lun-vend, 9h-18h</p>
+        </div>
+    </footer>
+</body>
+</html>
