@@ -65,6 +65,21 @@ nav ul{
     font-size: 14px;
     font-weight: 500;
 }
+
+nav ul a {
+    text-decoration: none;
+    color:black;
+}
+
+nav ul .active{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: var(--Vert-plante);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
 nav ul li {
     cursor: pointer;
 }
@@ -291,6 +306,149 @@ nav ul li {
     text-decoration: none;
     font-size: 14px;
 }
+
+/* partie Amphi */
+
+.Amphi{
+    width: 100%;
+    height: 200px;
+    background-color: var(--Ligne);
+    padding: 40px 40px;
+}
+
+.Amphi div{
+
+}
+
+.Amphi div h3{
+    font-weight: 600;
+}
+
+.Amphi div p{
+    font-size: 14px;
+    color: var(--Anthracite-doux);
+}
+
+.cadre {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding:100px 50px;
+}
+
+.cadre .cadre_image{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+.cadre .cadre_description{
+    width: 100%;
+    height: 300px;
+    padding: 0px 40px;
+}
+
+.cadre .cadre_description p{
+    text-align: justify;
+    width: 60%;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.Fiche{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--Ligne);
+    padding: 100px 50px;
+}
+
+.Fiche .Fiche_name{
+   padding: 0px 50px;
+}
+
+.Fiche .Fiche_global{
+    display: flex;
+}
+
+
+.Fiche_description{
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    
+   
+}
+
+.Fiche_description .special{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Anthracite-doux);
+    margin-top: 1rem;
+}
+
+.Fiche .Fiche_image{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+   
+    
+}
+
+.Fiche .Img_Fiche{
+     width: 100%;
+     height: 400px;
+     background-color: var(--Anthracite);
+}
+
+.Configurations{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 100px 50px;
+    margin-bottom: 100px;
+}
+
+.Configuration_btn{
+     
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.Configuration_btn .conf_reservation{
+     display: flex;
+    align-items: center;
+     width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Vert-plante);
+    color: var(--Blanc);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Configuration_btn .conf_gallerie{
+    display: flex;
+    align-items: center;
+     width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #2e5a4c;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+}
+
+
 
 footer{
     width: 100%;
