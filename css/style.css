@@ -1,0 +1,336 @@
+:root{
+    --anthracite : #1e1c1a;
+    --anthracite-doux : #55504a;
+    --mur : #f5f4f1;
+    --blanc : #ffffff;
+    --chene : #b98b58;
+    --chene-fonce : #8a6238;
+    --vert-plante : #2e5a4c;
+    --vert-fonce : #20433a;
+    --ligne : #dad6ce;
+}
+h1, h2, h3, h4, h5, h6, p{
+    color: var(--anthracite);
+    
+}
+html{
+    background-color: var(--blanc);
+    
+}
+section{
+    background-color: var(--mur);
+}
+.bouton-reserver{
+    background-color: var(--vert-plante);
+    color: var(--blanc);
+    text-decoration: none;
+    border-radius: 5px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+
+}
+.bouton-reserver:hover{
+    color:var(--vert-fonce);
+    
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, button, ul, tr, td, label{
+    font-family: Poppins, sans-serif;
+}
+/* ------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#en-tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-left: 4em;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--mur);
+    border-top: 2px solid rgba(136, 136, 136, 0.275);
+  border-bottom: 2px solid rgb(136, 136, 136, 0.275);
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    margin-left: 5em;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: var(--anthracite-doux);
+}
+nav a[aria-current="page"]{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--vert-fonce);
+    font-weight: 600;
+    
+}
+#section-header{
+    width: 100%;
+    height: 30vh;
+    border-bottom: 2px solid rgb(136, 136, 136, 0.275);
+    
+    
+}
+.div-section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5em;
+    padding-top: 1em;
+}
+
+#galerie-image{
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: var(--blanc);
+    
+    
+
+    
+
+}
+#galerie-image img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+    gap: 20px;
+  padding: 10px;
+}
+#section-card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--blanc);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-bottom: 2px solid rgb(136, 136, 136, 0.275);
+   
+}
+.card-tarif{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    height: 200px;
+    border: solid 2px rgb(162, 162, 162);
+    padding: 2em;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    a{
+        background-color: var(--blanc);
+        border: 3px solid var(--vert-fonce);
+        width: fit-content;
+        padding: 0.5em;
+        text-decoration: none;
+        color: var(--anthracite);
+        border-radius: 10px;
+    }
+    
+
+}
+.card-tarif:hover{
+    border: solid 5px var(--vert-fonce);
+    a{
+        background-color: var(--vert-fonce);
+        color: var(--blanc);
+    }
+}
+
+#section-option{
+    background-color: var(--ligne);
+    width: 100%;
+    height: fit-content;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+    .div-section-option{
+        margin-left: 5em;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tarifs {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background-color: #f5f4f0;
+}
+
+.tarifs th,
+.tarifs td {
+  text-align: left;
+  padding: 12px 10px;
+}
+
+/* En-tête : texte en gras + trait épais noir dessous */
+.tarifs thead th {
+  font-weight: 700;
+  border-bottom: 3px solid #1a1a1a;
+}
+
+/* Lignes : trait gris fin entre chaque ligne */
+.tarifs tbody td {
+  border-bottom: 3px solid #d6d6d6;
+}
+
+/* Largeurs des colonnes */
+.tarifs th:nth-child(1),
+.tarifs td:nth-child(1) {
+  width: 35%;
+}
+
+.tarifs th:nth-child(2),
+.tarifs td:nth-child(2) {
+  width: 45%;
+}
+
+.tarifs th:nth-child(3),
+.tarifs td:nth-child(3) {
+  width: 20%;
+}
+}
+
+footer{
+
+    border-top: 2px solid rgb(136, 136, 136, 0.275);
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--anthracite);
+    width: 100%;
+    height: 20vh;
+    padding-top: 3em;
+    h2, p{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: var(--ligne);
+    }
+    a:hover{
+        color: var(--vert-fonce);
+    }
+    
+}
+#bandeau-reservation{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanc);
+    h6{
+        background-color: rgba(183, 155, 112, 0.207);
+        padding: 1em;
+        
+        border-left: 10px solid rgb(227, 145, 14);
+    }
+}
+#formulaire-reservation {
+  position: relative;
+    border-top: 2px solid rgb(136, 136, 136, 0.275);
+  padding: 10px 15px 20px 25px;
+  h2 {
+  font-size: 15px;
+  margin: 0 0 10px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #555;
+}
+label {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.sous-titre {
+  color: #666;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Champs */
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  border-radius: 3px;
+
+}
+
+/* Grille deux colonnes */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 8px;
+}
+
+/* Cases à cocher / boutons radio dans un cadre */
+.option {
+  font-weight: normal;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px 6px;
+  margin-bottom: 10px;
+}
+
+.option input {
+  width: auto;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+/* Bouton */
+button {
+  background: #24493a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a3529;
+}
+
+
+}
+
+
