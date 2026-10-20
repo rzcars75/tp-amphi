@@ -448,6 +448,117 @@ nav ul li {
     background: none;
 }
 
+/* partie equipements */
+
+.Équipements{
+    width: 100%;
+    height: 200px;
+    background-color: var(--Ligne);
+    padding: 40px 40px;
+}
+
+
+
+.Équipements div h3{
+    font-weight: 600;
+}
+
+.Équipements div p{
+    font-size: 14px;
+    color: var(--Anthracite-doux);
+}
+
+.Equipements_details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding:50px;
+   
+}
+
+.Equipements_details .Equipement_global{
+    display: flex;
+     gap: 10px;
+     margin-top: 1rem;
+     
+}
+
+.Equipements_details .Equipements_img{
+    background-color: var(--Anthracite);
+    width: 50%;
+    height: auto;
+}
+
+.Equipements_details .Equipements_img1{
+    background-color: var(--Anthracite);
+    width: 50%;
+    height: auto;
+}
+
+.Equipements_details .Equipements_img2{
+    background-color: var(--Anthracite);
+    width: 100%;
+    height: auto;
+}
+
+.Equipements_details article{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.Equipements_details article .bande{
+    width:100%;
+    height: 10px;
+    background-color: var(--Ligne);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.Equipements_details article ul{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin-top: 1rem;
+}
+
+.Besoin{
+    
+    width: 100%;
+    padding: 50px;
+    background-color: var(--Ligne);
+}
+
+.Besoin p{
+    
+    width: 70%;
+    font-size: 14px;
+    margin-top: 1rem;
+   
+}
+
+.Besoin button{
+
+     display: flex;
+    align-items: center;
+     width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Vert-plante);
+    color: var(--Blanc);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
 
 
 footer{
