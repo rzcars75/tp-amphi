@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --Anthracite:#1e1c1a;
+    --Anthracite-doux:#55504a;
+    --Mur:#f5f4f1;
+    --Blanc:#ffffff;
+    --Chêne:#b98b58;
+    --Chêne-foncé:#8a6238;
+    --Vert-plante:#2e5a4c;
+    --Vert-foncé:#20433a;
+    --Ligne:#dad6ce;
+}
+
+header{
+    width:100%;
+    box-shadow: 1px 1px 1px var(--Ligne);
+
+}
+
+header section{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header section div .title{
+        color: var(--Anthracite);
+        font-weight: 600;
+}
+
+header section div .sous_title{
+    font-size: 14px;
+    color: var(--Ligne);
+}
+
+header section button{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Vert-plante);
+    color: var(--Blanc);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    padding: 30px;
+    background-color: var(--Mur);
+    box-shadow: 1px 1px 1px var(--Mur);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+nav ul li {
+    cursor: pointer;
+}
+
+#banner{
+    width: 100%;
+    height: 500px;
+
+}
+
+#banner .first_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    height: 500px;
+    background-color: var(--Ligne);
+}
+
+#banner div article{
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    border: 2px double gray;
+    background-color: var(--Blanc);
+}
+
+#banner div article p{
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+#banner div article .btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+#banner div article .btn button{
+   width: auto;
+   height: auto;
+   padding: 10px;
+}
+.demande_reservation{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Vert-plante);
+    color: var(--Blanc);
+    font-weight: 600;
+    cursor: pointer;
+}
+.decouvrir_salle{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #2e5a4c;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+   
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 2rem;
+}
+
+.details_salle{
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+    height: auto;
+    
+    padding: 50px;
+}
+
+.details_salle h3{
+    font-size: 20px;
+}
+
+.details_salle p{
+    margin-top: 1rem;
+}
+
+.details_salle a{
+    margin-top: 1rem;
+}
+.details_capacity{
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    
+   
+}
+
+.details_capacity .special{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Anthracite-doux);
+    margin-top: 1rem;
+}
+
+.evenements{
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    background-color: var(--Ligne);
+}
+
+.evenements h3{
+    font-size: 20px;
+}
+
+.evenements_details{
+
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding: 10px 0px;
+    margin-top: 1rem;
+}
+
+.evenements_details1{
+
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid gray;
+    padding: 10px 0px;
+   
+}
+
+.evenements_details span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.evenements_details1 span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+   
+
+}
+
+.Images div{
+    display: flex;
+     gap: 10px;
+     padding: 20px 0px;
+
+}
+
+.Images div article{
+    background: black;
+    width: 100%;
+    height: 200px;
+}
+
+.Conservation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    background-color: var(--Mur);
+
+}
+
+.Conservation div{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.Conservation div article{
+
+    border-top: 3px solid var(--Vert-plante);
+    width: 100%;
+    height: 150px;
+    padding: 20px 0px;
+}
+
+.Conservation div article span{
+    border-radius: 30%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: var(--Vert-plante);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.Conservation div article p{
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.Conservation a {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Vert-plante);
+    color: var(--Blanc);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: var(--Anthracite);
+}
+
+footer .bar{
+    width: 100%;
+    height: 25px;
+     background:
+        repeating-linear-gradient(
+            135deg,
+            #c49a6c 0px,
+            #c49a6c 5px,
+            #8f704f 5px,
+            #8f704f 8px
+        );
+    
+    border: 4px solid #222;
+    box-sizing: border-box;
+}
+
+footer .confidentialiter{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+footer .confidentialiter h3{
+    color: var(--Blanc);
+}
+footer .confidentialiter p{
+    color: var(--Ligne);
+    font-size: 14px;
+}
+
+footer .droits{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .droits p{
+    color: var(--Ligne);
+    font-size: 14px;
+}
